@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cours - CCNA1</title>
+<link rel="icon" href="bellox.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="control.css">
+</head>
+<body>
+
+<header class="visible">
+<h1><i class="fas fa-info-circle"></i> Réseau-CCNA1</h1>
+  <button id="menuToggleButton" class="menu-toggle" aria-label="Ouvrir le menu de navigation">
+    <div class="icon-container">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+    </div>
+  </button>
+</header>
+
+<div id="overlay" class="overlay"></div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Fermer le menu de navigation">&times;</a>
+    <h1>AnimeRech</h1>
+  <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+  <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+  <a href="help.html"><i class="fas fa-question-circle"></i> Aide</a>
+  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+  <a href="privacy.html"><i class="fas fa-shield-alt"></i> Confidentialité</a>
+</div>
+
+<main class="container">
+ <section>
+ <h2 class="section-title">VLAN</h2>
+<section>
+  <p><strong>Version simple non détaillée :</strong> Un VLAN est un réseau virtuel à l’intérieur d’un switch.</p>
+  <p><strong>Version simple détaillée :</strong> Un VLAN (Virtual Local Area Network) permet de séparer logiquement un réseau en plusieurs groupes indépendants, même s’ils sont sur le même switch. Cela améliore la sécurité et l'organisation du réseau.</p>
+</section>
+
+<h2 class="section-title">Trunk</h2>
+<section>
+  <p><strong>Version simple non détaillée :</strong> Le Trunk permet de faire passer plusieurs VLAN sur un seul câble entre deux switchs.</p>
+  <p><strong>Version simple détaillée :</strong> Un port Trunk est un port spécial configuré sur un switch pour transporter plusieurs VLAN à la fois vers un autre switch. Il utilise le protocole 802.1Q pour marquer les trames selon leur VLAN d’origine.</p>
+</section>
+
+<h2 class="section-title">Port Security</h2>
+<section>
+  <p><strong>Version simple non détaillée :</strong> C’est une sécurité pour limiter quels appareils peuvent se connecter à un port.</p>
+  <p><strong>Version simple détaillée :</strong> Port Security permet de limiter le nombre d’appareils (en fonction de leur adresse MAC) pouvant se connecter à un port d’un switch. Si un appareil inconnu se connecte, le port peut être désactivé pour protéger le réseau.</p>
+</section>
+
+<h2 class="section-title">VTP</h2>
+<section>
+  <p><strong>Version simple non détaillée :</strong> VTP permet de synchroniser les VLAN entre plusieurs switchs.</p>
+  <p><strong>Version simple détaillée :</strong> VTP (VLAN Trunking Protocol) est un protocole Cisco qui partage automatiquement les informations de VLAN (nom, ID) entre les switchs. Cela facilite la gestion centralisée des VLAN.</p>
+</section>
+
+<h2 class="section-title">DTP</h2>
+<section>
+  <p><strong>Version simple non détaillée :</strong> DTP négocie automatiquement si un port doit être en mode Trunk ou Access.</p>
+  <p><strong>Version simple détaillée :</strong> DTP (Dynamic Trunking Protocol) permet aux switchs de décider automatiquement si un port doit être en mode Trunk ou Access. Il facilite l’autoconfiguration mais peut être désactivé pour des raisons de sécurité.</p>
+</section>
+
+<h2 class="section-title">STP</h2>
+<section>
+  <p><strong>Version simple non détaillée :</strong> STP évite les boucles dans un réseau avec plusieurs chemins.</p>
+  <p><strong>Version simple détaillée :</strong> STP (Spanning Tree Protocol) désactive certains liens entre switchs pour empêcher les boucles réseau. Il garde un seul chemin actif, et active un autre lien en cas de panne, garantissant la stabilité du réseau.</p>
+</section>
+
+<h2 class="section-title">DHCP</h2>
+<section>
+  <p><strong>Version simple non détaillée :</strong> DHCP donne automatiquement une adresse IP aux machines.</p>
+  <p><strong>Version simple détaillée :</strong> DHCP (Dynamic Host Configuration Protocol) attribue automatiquement une adresse IP, une passerelle et des DNS aux appareils sur un réseau, ce qui évite de les configurer manuellement.</p>
+</section>
+
+<h2 class="section-title">EtherChannel</h2>
+<section>
+  <p><strong>Version simple non détaillée :</strong> EtherChannel regroupe plusieurs câbles en un seul lien logique.</p>
+  <p><strong>Version simple détaillée :</strong> EtherChannel combine plusieurs ports physiques d’un switch en un seul lien logique, augmentant la bande passante et assurant une tolérance aux pannes si un câble est défectueux.</p>
+</section>
+
+
+<!--
+<h2 class="section-title">Technologies Utilisées</h2>
+<ul>
+  <li>API Jikan (MyAnimeList) pour les données animées</li>
+  <li>Google Cloud Translation API pour la traduction automatique multilingue</li>
+  <li>HTML5, CSS3 et JavaScript moderne</li>
+  <li>Design responsive pour tous les appareils</li>
+  <li>Polices Google Fonts et icônes Font Awesome</li>
+</ul>
+-->
+
+</main>
+
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+      <a href="help.html"><i class="fas fa-question-circle"></i> Aide</a>
+<a href="mailto:mantinoubello123@gmail.com">
+  <i class="fas fa-envelope"></i>Email
+</a>
+<a href="privacy.html"><i class="fas fa-shield-alt"></i> Confidentialité</a>
+    </div>
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/mantinoubello" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://www.facebook.com/mantinou.bello.2025" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/the_famous_0001" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="#" aria-label="Discord">
+    <i class="fab fa-discord"></i>
+  </a>
+</div>
+<div class="copyright">
+  &copy; <span id="year"></span> AnimeRech - Tous droits réservés
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
