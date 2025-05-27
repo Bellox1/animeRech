@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aide - AnimeRech</title>
+  <link rel="icon" href="bellox.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="control.css" />
+</head>
+<body>
+
+<header class="visible">
+  <h1><i class="fas fa-question-circle"></i> Aide d'AnimeRech</h1>
+  <button id="menuToggleButton" class="menu-toggle" aria-label="Ouvrir le menu de navigation">
+    <div class="icon-container">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+    </div>
+  </button>
+</header>
+
+<div id="overlay" class="overlay"></div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Fermer le menu de navigation">&times;</a>
+    <h1>AnimeRech</h1>
+  <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+  <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+  <a href="help.html"><i class="fas fa-question-circle"></i> Aide</a>
+  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+  <a href="privacy.html"><i class="fas fa-shield-alt"></i> Confidentialité</a>
+</div>
+
+<main class="container">
+  <section>
+    <h2 class="section-title">Besoin d'aide ?</h2>
+    <p>Bienvenue dans la section d'aide d'AnimeRech. Voici quelques réponses aux questions fréquentes :</p>
+
+    <h2 class="section-title">Fonctionnalités avancées</h2>
+    <p>Utilisez le bouton "Aléatoire" pour découvrir de nouveaux animes.</p>
+    <p>Cliquez sur "Bande-annonce" pour voir la vidéo de présentation.</p>
+
+    <h2 class="section-title">Comment rechercher un anime ?</h2>
+    <p>Utilisez la barre de recherche en haut de la page d'accueil pour saisir le nom de l'anime. Vous obtiendrez des résultats détaillés avec synopsis, note, et plus encore.</p>
+    <p>1. Entrez le nom d'un anime dans la barre de recherche</p>
+    <p>2. Cliquez sur "Rechercher" ou appuyez sur Entrée</p>
+    <p>3. Utilisez le menu déroulant pour choisir le nombre de résultats</p>
+
+    <h2 class="section-title">Que faire si un anime ne s'affiche pas ?</h2>
+    <p>Vérifiez l'orthographe ou essayez un autre nom (japonais ou anglais). Si le problème persiste, contactez-nous via la page Contact.</p>
+
+    <h2 class="section-title">Problèmes fréquents</h2>
+
+    <h3 class="section-title">Je ne trouve pas un anime spécifique</h3>
+    <p>Essayez d'utiliser le titre original japonais ou différentes orthographes.</p>
+
+    <h3 class="section-title">Les images ne s'affichent pas</h3>
+    <p>Vérifiez votre connexion internet et rechargez la page.</p>
+
+    <h3 class="section-title">La recherche ne retourne aucun résultat</h3>
+    <p>Essayez des termes de recherche plus génériques ou utilisez la recherche aléatoire.</p>
+
+    <h2 class="section-title">Puis-je créer un compte ?</h2>
+    <p>Actuellement, la version publique ne nécessite pas de compte, mais des fonctionnalités avancées arriveront bientôt avec des profils utilisateurs.</p>
+  </section>
+</main>
+
+
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+      <a href="help.html"><i class="fas fa-question-circle"></i> Aide</a>
+<a href="mailto:mantinoubello123@gmail.com">
+  <i class="fas fa-envelope"></i>Email
+</a>
+<a href="privacy.html"><i class="fas fa-shield-alt"></i> Confidentialité</a>
+    </div>
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/mantinoubello" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://www.facebook.com/mantinou.bello.2025" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/the_famous_0001" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="#" aria-label="Discord">
+    <i class="fab fa-discord"></i>
+  </a>
+</div>
+    <div class="copyright">
+  &copy; <span id="year"></span> AnimeRech - Tous droits réservés
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

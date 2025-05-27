@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>AnimeRech - Manga</title>
+<link rel="icon" href="bellox.png" type="image/png">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<header class="visible">
+  <h1><i class="fas fa-search"></i> Recherche d'Anime</h1>
+  <button id="menuToggleButton" class="menu-toggle" aria-label="Ouvrir le menu de navigation">
+    <div class="icon-container">
+      <i class="fas fa-bars"></i>
+      <i class="fas fa-times"></i>
+    </div>
+  </button>
+</header>
+
+<div id="overlay" class="overlay"></div>
+
+<div id="mySidebar" class="sidebar">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" aria-label="Fermer le menu de navigation">&times;</a>
+  <h1>AnimeRech</h1>
+  <a href="index.html"><i class="fas fa-home"></i> Accueil</a>
+  <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+  <a href="help.html"><i class="fas fa-question-circle"></i> Aide</a>
+  <a href="contact.html"><i class="fas fa-envelope"></i> Contact</a>
+  <a href="privacy.html"><i class="fas fa-shield-alt"></i> Confidentialité</a>
+</div>
+
+<main class="container">
+  <section class="default-animes">
+    <h2>Animes populaires</h2>
+    <div class="default-animes-grid" id="defaultAnimes"></div>
+  </section>
+
+  <div class="search-row" role="search" aria-label="Recherche d'animes">
+    <div class="search-box">
+      <i class="fas fa-search search-icon"></i>
+      <input type="text" id="searchInput" placeholder="Rechercher un anime (ex: Blue Lock, Naruto...)" aria-label="Champ de recherche anime" />
+    </div>
+    <select id="resultCount" aria-label="Nombre de résultats">
+      <option value="5">5 résultats</option>
+      <option value="10" selected>10 résultats</option>
+      <option value="15">15 résultats</option>
+      <option value="20">20 résultats</option>
+    </select>
+    <button id="btnSearch" aria-label="Bouton rechercher anime"><i class="fas fa-search"></i> Rechercher</button>
+    <button id="btnRandom" aria-label="Bouton recherche aléatoire"><i class="fas fa-random"></i> Aléatoire</button>
+  </div>
+
+  <div id="results" aria-live="polite" aria-atomic="true"></div>
+</main>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-links">
+      <a href="about.html"><i class="fas fa-info-circle"></i> À propos</a>
+      <a href="help.html"><i class="fas fa-question-circle"></i> Aide</a>
+<a href="mailto:mantinoubello123@gmail.com">
+  <i class="fas fa-envelope"></i>Email
+</a>
+<a href="privacy.html"><i class="fas fa-shield-alt"></i> Confidentialité</a>
+    </div>
+<div class="social-links">
+  <a href="https://www.linkedin.com/in/mantinoubello" target="_blank" rel="noopener noreferrer" aria-label="Linkedin">
+    <i class="fab fa-linkedin"></i>
+  </a>
+  <a href="https://www.facebook.com/mantinou.bello.2025" target="_blank" rel="noopener noreferrer" aria-label="Facebook">
+    <i class="fab fa-facebook"></i>
+  </a>
+  <a href="https://www.instagram.com/the_famous_0001" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+    <i class="fab fa-instagram"></i>
+  </a>
+  <a href="#" aria-label="Discord">
+    <i class="fab fa-discord"></i>
+  </a>
+</div>
+   <div class="copyright">
+  &copy; <span id="year"></span> AnimeRech - Tous droits réservés
+</div>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+  </div>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
